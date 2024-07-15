@@ -7,7 +7,7 @@ pipeline {
         AWS_DEFAULT_REGION = "us-east-1"
     }
     stages {
-        stage("Create an EKS Cluster") {
+        /*stage("Create an EKS Cluster") {
             steps {
                 script {
                     dir('eks-cluster') {
@@ -16,7 +16,7 @@ pipeline {
                     }
                 }
             }
-        }
+        }*/
         stage("destroy eks clsuster") {
             steps {
                 script {
