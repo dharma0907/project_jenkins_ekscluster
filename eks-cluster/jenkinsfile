@@ -17,8 +17,6 @@ pipeline {
                 }
             }
         }
-    }
-      stages {
         stage("destroy eks clsuster") {
             steps {
                 script {
