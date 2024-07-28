@@ -27,7 +27,7 @@ pipeline{
                 echo "========executing k8 manifest files suing kubectl commands========"
                 script{
                      dir(k8/manifest){
-                         sh "aws eks update-kubeconfig  --name democluster"
+                         sh "aws eks update-kubeconfig  --name dharma_eks_cluster"
                          sh "kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.11.1/deploy/static/provider/aws/deploy.yaml"
                          sh "kubectl apply -f deployment.yaml"
                          sh "kubectl apply -f service.yaml"
